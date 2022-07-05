@@ -1,0 +1,27 @@
+<!-- esquadro.html -->
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle='black';
+    pincel.beginPath();
+    pincel.moveTo(50, 50);
+    pincel.lineTo(50, 400);
+    pincel.lineTo(400, 400);
+    pincel.fill();
+
+    pincel.fillStyle='white';
+    pincel.beginPath();
+    pincel.moveTo(100, 175);
+    pincel.lineTo(100, 350);
+    pincel.lineTo(275, 350);
+    pincel.fill();
+
+</script>
+
+/*Com as coordenadas em mãos é só mover o pincel para o lugar certo. É importante ressaltar que devemos começar um novo path para cada triângulo.
+Repare que essa API também serve para desenhar outras figuras geométricas, não só triângulos, até podemos desenhar retângulos. Tudo depende para onde você move o pincel!*/

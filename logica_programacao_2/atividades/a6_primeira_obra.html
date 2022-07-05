@@ -1,0 +1,16 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgrey';  // molha o pincel na tinta.
+    pincel.fillRect(0, 0, 600, 400); // desenha na tela. *.fillRect= cria um retangulo.*
+
+    pincel.fillStyle = 'green'; // molha o pincel na tinta.
+    pincel.fillRect(0, 0, 200, 400); // desenha na tela.
+
+    pincel.fillStyle = 'red';  // molha o pincel na tinta. 
+    pincel.fillRect(400, 0, 200, 400); // desenha na tela.
+</script>

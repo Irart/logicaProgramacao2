@@ -1,0 +1,11 @@
+<canvas width="600" height="400"></canvas> <!--tag canvas reserva espaço para desenhar-->
+
+<script>
+
+    var tela = document.querySelector("canvas"); // declara uma variavel e busca a tag do html para trabalharmos no js
+    var pincel = tela.getContext('2d'); // cria pincel e declara o gráfico informando o contexto
+
+    pincel.fillStyle = 'lightgrey'; // 
+    pincel.fillRect(0, 0, 800, 600);  // preenche o retangulo de cordo com as coordenadar, baseadas nos plano catesiano. x=0, Y=0
+
+</script>

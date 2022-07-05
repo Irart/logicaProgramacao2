@@ -1,0 +1,26 @@
+Já praticamos bastante com retângulos, agora é hora de desenhar uma outra figura. Nesse exercício a tarefa é desenhar um esquadro:
+
+
+Repare que isso é nada mais do que dois triângulos, um dentro do outro. Lembrando também que desenhar um triângulo é diferente de um retângulo, pois é preciso desenhar linha por linha. Em outras palavras, a API é diferente!
+
+Para desenhar é preciso inicializar um path e mover o pincel para uma posição:
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.beginPath();
+pincel.moveTo(50, 50);COPIAR CÓDIGO
+A partir daí podemos desenhar uma linha:
+
+var tela = document.querySelector('canvas');
+var pincel = tela.getContext('2d');
+
+pincel.beginPath();
+pincel.moveTo(50, 50);
+pincel.lineTo(50, 400);COPIAR CÓDIGO
+Uma vez todas as linhas desenhadas, podemos preencher a figura:
+
+pincel.fill();COPIAR CÓDIGO
+Agora é com você: Crie uma nova página (por exemplo esquadro.html) e desenhe o esquadro baseado nas coordenadas na imagem acima.
+
+Como sempre há uma ajuda, para ver a resposta do instrutor é só clicar em Ver opinião do instrutor.
